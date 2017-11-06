@@ -12,33 +12,95 @@
 
 <!DOCTYPE html>
 <html>
-    <head>   
-        <!--Title -->
-            <title>Monserrat's Portfolio</title>
-        <!-- Your CSS  -->
-            <link rel="stylesheet" href="css/style.css" type="text/css" />
-        <!-- Bootstrap CSS  -->
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
-        <!-- Fontawesome CSS  -->
-        
-        <script type="text/javascript" src="js/script.js"></script>
+    <head>
         <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
-        
+        <script type="text/javascript" src="js/script.js"></script>
+        <!-- Bootstrap CSS  -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">        <!-- Your CSS  -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css" type="text/css" />        
+        <!-- Fontawesome CSS  -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Title -->
+        <title>Monserrat's Portfolio</title>
     </head>
     
     <body>
-        <!-- Nav Bar -->
-        <ul class="nav nav-pills">
-            <li role="presentation" class="active"><a href="index.html">Home</a></li>
-            <li role="presentation"><a href="contact.html">Contact Me</a></li>
-            <li role="presentation"><a href="about.html">About Me</a></li>
-        </ul>
-        
+
         <!-- Header -->
+        <div class="contatiner">
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class=col-md-8>
+                    <img class="img-responsive" id="nameLogo" src="https://amazonfashionweektokyo.com/en/wp-content/uploads/2016/01/Name_logo.jpg">
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+        </div>
         
-    
+        
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+        </nav>
+            
+            
         <!-- Portfolio Grid Section -->
-        
+        <div class="contatiner-fluid">
+            <div class="row">
+                <div class="col-md-2">
+                    
+                </div>
+                <div class="col-md-4">
+                    <img class="img-responsive" src="pictures/headshot.jpg" id="headshot"></img>
+                </div>
+                <div class="col-md-5">
+                    <p>
+                        My name is Monserrat Diaz Martinez and I am a senior at All City Leadership Secondary School in Bushwick. 
+                        I was introduced to web design by ScriptEd last year and have quickly developed my skills, 
+                        helping my team come in 2nd at my first hackathon and 3rd at the second. I also attended the 
+                        ScriptEd Summer Academy this past summer, learning bootstrap and designing a website for a client along with my partner. 
+                        My interests/hobbies include listening to music, baking, and reading. I am also part of a sisterhood, 
+                        Sister SAGE (Strengthening Advocacy for Girl’s Empowerment) that does various community service projects.
+                    </p>
+                </div>
+                <div class="col-md-1">
+                    
+                </div>
+            </div>
+        </div>
     
         <!-- About Section -->
        
