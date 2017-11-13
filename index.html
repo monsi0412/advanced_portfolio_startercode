@@ -26,29 +26,30 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--Title -->
+    <link rel="icon" href="pictures/heart line.png">
     <title>Monserrat's Portfolio</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar">
 
     <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#"><img src="pictures/name.png" id="nameLogo" class="img-responsive"></img></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#opening">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#about">About Me</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown
+                    <a class="nav-link dropdown-toggle" href="#projects" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Projects
                         </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#">Action</a>
@@ -58,17 +59,24 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
+                    <a class="nav-link disabled" href="#contact">Disabled</a>
                 </li>
             </ul>
         </div>
     </nav>
 
+
     <!-- Header -->
+    <div class="container">
+        <div class="row spacer"></div><div class="row spacer"></div><div class="row spacer"></div>
+        <div class="row" id="opening">
+            this will be my opening image/screen
+        </div>
+    </div>
 
-
-    <!-- Portfolio Grid Section -->
-    <div class="contatiner-fluid">
+    <!-- About Section -->
+    <div class="contatiner-fluid" id="about">
+        <div class="row spacer"></div>
         <div class="row">
             <div class="col-md-2">
 
@@ -78,33 +86,66 @@
             </div>
             <div class="col-md-5">
                 <p>
-                    My name is Monserrat Diaz Martinez and I am a senior at All City Leadership Secondary School in Bushwick. I was introduced to web design by ScriptEd last year and have quickly developed my skills, helping my team come in 2nd at my first hackathon and
-                    3rd at the second. I also attended the ScriptEd Summer Academy this past summer, learning bootstrap and designing a website for a client along with my partner. My interests/hobbies include listening to music, baking, and reading. I
-                    am also part of a sisterhood, Sister SAGE (Strengthening Advocacy for Girl’s Empowerment) that does various community service projects.
+                    My name is Monserrat Diaz Martinez and I am a senior at All City Leadership Secondary School in Bushwick. 
+                    I was introduced to web design by ScriptEd last year and have quickly developed my skills, 
+                    helping my team come in 2nd at my first hackathon and
+                    3rd at the second. I also attended the ScriptEd Summer Academy this past summer, 
+                    learning bootstrap and designing a website for a client along with my partner. 
+                    My interests/hobbies include listening to music, baking, and reading. I
+                    am also part of a sisterhood, Sister SAGE (Strengthening Advocacy for Girl's Empowerment) 
+                    that does various community service projects.
                 </p>
             </div>
             <div class="col-md-1">
 
             </div>
         </div>
+        <div class="row spacer"></div>
+        
     </div>
 
-    <!-- About Section -->
-
+    <!-- Portfolio Grid Section -->
+    <div class="contatiner" id="projects">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-4">
+                <img src="pictures/Hackathon 1.png" class="img-thumbnail"></img>
+            </div>
+            <div class="col-md-2">
+                <div class="row">
+                    <p>
+                        This is from my first Hacakthon
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img src="pictures/Hackathon 2.png" class="img-thumbnail"></img>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="row spacer"></div>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-4">
+                <img src="pictures/Lous.png" class="img-thumbnail"></img>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-4">
+                <img src="pictures/LousOrder.png" class="img-thumbnail"></img>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="row spacer"></div>
+    </div>
 
     <!-- Contact Section -->
-
+    <div class="container" id="contact">
+        This is going to be my contact
+    </div>
 
     <!-- Footer -->
 
-
-    <!-- Jquery Script -->
-
-
-    <!--Bootstrap Javascript -->
-
-
-    <!-- Your Javascript -->
+<div class="row spacer"></div>
 
 </body>
 
