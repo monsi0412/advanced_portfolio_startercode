@@ -1,7 +1,7 @@
 body {
   position: relative;
 }
-li, p, form, button{
+li, p, form, button, address{
     font-family: 'Arima Madurai', cursive;
     font-size:24px;
 }
@@ -58,7 +58,9 @@ a:active {
 
 /* Section CSS */
 
-
+#myContact, #contactMe{
+    background-color: white;
+}
 
 /* About Section CSS */
 
