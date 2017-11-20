@@ -14,6 +14,7 @@
 <html>
 
 <head>
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
     <!-- Bootstrap CSS  -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
@@ -21,56 +22,97 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-
+    <link href="https://fonts.googleapis.com/css?family=Arima+Madurai:200" rel="stylesheet">
     <!-- Fontawesome CSS  -->
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--Title -->
     <link rel="icon" href="pictures/heart line.png">
     <title>Monserrat's Portfolio</title>
+    
+    <style media="all">
+        html, body{height:100%;} 
+        #opening, #about, #projects, #contact{
+        min-height:100%;
+        }
+        body, p { margin:0; padding:0}
+    
+    </style>
+    
 </head>
 
-<body data-spy="scroll" data-target=".navbar">
+<body data-spy="scroll" data-target="#myNav" data-offset="0">
 
-    <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+     <!--Nav Bar -->
+    <nav class="navbar navbar-expand-lg  fixed-top" id="myNav">
         <a class="navbar-brand" href="#"><img src="pictures/name.png" id="nameLogo" class="img-responsive"></img></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav mr-auto nav-fill">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#opening">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#opening">Home <span class="sr-only current">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#about">About Me</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#projects" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Projects
-                        </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
+                <li class="nav-item">
+                    <a class="nav-link " href="#projects">
+                        Projects
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" href="#contact">Disabled</a>
+                    <a class="nav-link" href="#contact">Contact Me</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-
+    <!-- NavBar scrollspy attempt -->
+    
+                <!--<nav id="navbar-example2" class="navbar navbar-light bg-light fixed-top">-->
+                <!--  <a class="navbar-brand" href="#">Navbar</a>-->
+                <!--  <ul class="nav nav-pills">-->
+                <!--    <li class="nav-item">-->
+                <!--      <a class="nav-link" href="#fat">@fat</a>-->
+                <!--    </li>-->
+                <!--    <li class="nav-item">-->
+                <!--      <a class="nav-link" href="#mdo">@mdo</a>-->
+                <!--    </li>-->
+                <!--    <li class="nav-item dropdown">-->
+                <!--      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>-->
+                <!--      <div class="dropdown-menu">-->
+                <!--        <a class="dropdown-item" href="#one">one</a>-->
+                <!--        <a class="dropdown-item" href="#two">two</a>-->
+                <!--        <div role="separator" class="dropdown-divider"></div>-->
+                <!--        <a class="dropdown-item" href="#three">three</a>-->
+                <!--      </div>-->
+                <!--    </li>-->
+                <!--  </ul>-->
+                <!--</nav>-->
+                <!--<div data-spy="scroll" data-target="#navbar-example2" data-offset="0">-->
+                <!--  <h4 id="fat">@fat</h4>-->
+                <!--  <p>...</p>-->
+                <!--  <h4 id="mdo">@mdo</h4>-->
+                <!--  <p>...</p>-->
+                <!--  <h4 id="one">one</h4>-->
+                <!--  <p>...</p>-->
+                <!--  <h4 id="two">two</h4>-->
+                <!--  <p>...</p>-->
+                <!--  <h4 id="three">three</h4>-->
+                <!--  <p>...</p>-->
+                <!--</div>-->
+    
     <!-- Header -->
-    <div class="container">
+
+    <div class="container-fluid" id="opening">
         <div class="row spacer"></div><div class="row spacer"></div><div class="row spacer"></div>
-        <div class="row" id="opening">
-            this will be my opening image/screen
+        <div class="row" >
+            <p>
+                This is going to be my opening image
+            </p>
         </div>
     </div>
 
@@ -78,11 +120,16 @@
     <div class="contatiner-fluid" id="about">
         <div class="row spacer"></div>
         <div class="row">
+            <img src="pictures/fancyLine2.png" class="fancyLines">
+        </div>
+        <div class="row spacer"></div>
+        <div class="row spacer"></div>
+        <div class="row">
             <div class="col-md-2">
 
             </div>
             <div class="col-md-4">
-                <img class="img-responsive" src="pictures/headshot.jpg" id="headshot"></img>
+                <img class="img-responsive rounded" src="pictures/headshot.jpg" id="headshot" style="margin:0 auto"></img>
             </div>
             <div class="col-md-5">
                 <p>
@@ -105,21 +152,47 @@
     </div>
 
     <!-- Portfolio Grid Section -->
-    <div class="contatiner" id="projects">
+    <div class="contatiner-fluid" id="projects">
+        <div class="row spacer"></div>
+        <div class="row">
+            <img src="pictures/fancyLine2.png" class="fancyLines">
+        </div>
+        <div class="row spacer" id="projectLabel">
+            <div class="col-xs-12"><h1>Projects</h1></div>
+        </div>
+        <div class="row spacer"></div>
         <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-4">
-                <img src="pictures/Hackathon 1.png" class="img-thumbnail"></img>
+                <a href="https://github.com/Zedahislam/Time-of-Subway" target="_blank"><img src="pictures/Hackathon 1.png" class="img-thumbnail"></img></a>
             </div>
             <div class="col-md-2">
                 <div class="row">
                     <p>
-                        This is from my first Hacakthon
+                        &#8592 This is from my first Hacakthon, my team placed second.
+                    </p>
+                </div>
+                <div class="row">
+                    <p>
+                        This is from my second Hacakthon, my team placed third. &#8594
                     </p>
                 </div>
             </div>
             <div class="col-md-4">
-                <img src="pictures/Hackathon 2.png" class="img-thumbnail"></img>
+                <a href="#" target="_blank"><img src="pictures/Hackathon 2.png" class="img-thumbnail"></img></a>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-4">
+                <button class="descriptionBtn" data-toggle="modal" data-target="#hackathon1Modal">Click to Enlarge</button>
+            </div>
+            <div class="col-md-2">
+
+            </div>
+            <div class="col-md-4">
+                <button class="descriptionBtn" data-toggle="modal" data-target="#hackathon2Modal">Click to Enlarge</button>
             </div>
             <div class="col-md-1"></div>
         </div>
@@ -127,20 +200,225 @@
         <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-4">
-                <img src="pictures/Lous.png" class="img-thumbnail"></img>
+                <a href="https://monsi0412.github.io/Lous-Cakes-and-Bakes/" target="_blank"><img src="pictures/Lous.png" class="img-thumbnail"></img></a>
             </div>
-            <div class="col-md-2"></div>
+            <div class="col-md-2">
+                <div class="row">
+                    <p>
+                        &#8592 This is my project from Summer Academy. 
+                    </p>
+                </div>
+                <div class="row">
+                    <p>
+                        This is from the order page, which was my main focus. &#8594 
+                    </p>
+                </div>
+            </div>
             <div class="col-md-4">
-                <img src="pictures/LousOrder.png" class="img-thumbnail"></img>
+                <a href="https://monsi0412.github.io/Lous-Cakes-and-Bakes/order.html" target="_blank"><img src="pictures/LousOrder.png" class="img-thumbnail"></img></a>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-4">
+                <button class="descriptionBtn" data-toggle="modal" data-target="#Lous1Modal">Click to Enlarge</button>
+            </div>
+            <div class="col-md-2">
+
+            </div>
+            <div class="col-md-4">
+                <button class="descriptionBtn" data-toggle="modal" data-target="#Lous2Modal">Click to Enlarge</button>
             </div>
             <div class="col-md-1"></div>
         </div>
         <div class="row spacer"></div>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-4">
+                <a href="https://github.com/monsi0412/sage-safe" target="_blank"><img src="pictures/sageOne.png" class="img-thumbnail"></img></a>
+            </div>
+            <div class="col-md-2">
+                <div class="row">
+                    <p>
+                        &#8592 This is a game I collaborated on.
+                    </p>
+                </div>
+                <div class="row">
+                    <p>
+                        The points changed as well as the background if the question was/wasn't answered correctly. &#8594 
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <a href="https://github.com/monsi0412/sage-safe" target="_blank"><img src="pictures/sageTwo.png" class="img-thumbnail"></img></a>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-4">
+                <button class="descriptionBtn" data-toggle="modal" data-target="#Sage1Modal">Click to Enlarge</button>
+            </div>
+            <div class="col-md-2">
+
+            </div>
+            <div class="col-md-4">
+                <button class="descriptionBtn" data-toggle="modal" data-target="#Sage2Modal">Click to Enlarge</button>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="row spacer"></div>
+        <div class="row">
+            <img src="pictures/fancyLine2.png" class="fancyLines">
+        </div>
+    </div>
+    
+    <!-- Project Modals -->
+
+    <div id="hackathon1Modal" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h1>My First Hackathon</h1>
+                </div>
+                <div class="modal-body">
+                    <img src="pictures/Hackathon 1.png" class="modalImg img-responsive"></img>
+                    <p>
+                        For my first hackathon my team had to make a website that in some way enacted change.
+                        We decided to attempt a game that would simulate what the MTA was like.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>       
+    </div>
+    <div id="hackathon2Modal" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h1>My Second Hackathon</h1>
+                </div>
+                <div class="modal-body">
+                    <img src="pictures/Hackathon 2.png" class="modalImg img-responsive"></img>
+                    <p>
+                        For my second hackathon my team had to make a website that had to do with our future.
+                        We decided to attempt a game that would simulate our journey to our future, through school.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>       
+    </div>
+    <div id="Lous1Modal" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h1>My First Hackathon</h1>
+                </div>
+                <div class="modal-body">
+                    <img src="pictures/Lous.png" class="modalImg img-responsive"></img>
+                    <p>
+                        During Summer Academy my partner and I made a website for a mock client, who wanted it for his
+                        friend that had a bakery
+                    </p>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>       
+    </div>
+    <div id="Lous2Modal" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h1>My Second Hackathon</h1>
+                </div>
+                <div class="modal-body">
+                    <img src="pictures/LousOrder.png" class="modalImg img-responsive"></img>
+                    <img src="pictures/LousCart.png" class="modalImg img-responsive"></img>
+                    <p>
+                        I spent 3 days working on a functional ordering page where you could actually select quantities and products
+                        and then it would be reflected in the shopping cart.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>       
+    </div><div id="Sage1Modal" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h1>My First Hackathon</h1>
+                </div>
+                <div class="modal-body">
+                    <img src="pictures/sageOne.png" class="modalImg img-responsive"></img>
+                    <p>
+                        For my after school program we held an event to educate the community on substance abuse. 
+                        My friend and I made a game to make it more fun to lean about possibly surprising facts.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>       
+    </div>
+    <div id="Sage2Modal" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h1>My Second Hackathon</h1>
+                </div>
+                <div class="modal-body">
+                    <img src="pictures/sageTwo.png" class="modalImg img-responsive"></img>
+                    <p>
+                        Although we didn't get to make it the prettiest, we were pretty proud of the working points
+                        system and the ability to change background color according to correctness.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>       
     </div>
 
     <!-- Contact Section -->
-    <div class="container" id="contact">
-        This is going to be my contact
+    <div class="container-fluid" id="contact">        
+        <div class="row spacer"></div>
+        <div class="row spacer"></div>
+        <div class="row spacer"></div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="contactForm">
+                        <form action="https://formspree.io/mdiaz0412@outlook.com" method="POST" >
+                            <h3>Want to contact me?</h3>
+                            <div class="form-group">
+                                <label class="contactLabel">Name:</label>
+                                <input type="text" name="name" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label class="contactLabel">Email:</label>
+                                <input type="email" name="_replyto" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label class="contactLabel">Message:</label>
+                                <textarea id="message" type="textarea" name="message"></textarea>
+                            </div>
+                            <input type="submit" value="Send" id="contactSubmit">
+                        </form>
+                    </div>    
+                </div>
+            </div>    
+        
     </div>
 
     <!-- Footer -->

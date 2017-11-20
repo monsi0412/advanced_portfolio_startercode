@@ -1,3 +1,5 @@
+/*global $*/
+
 //Unit 4 Portfolio with Object
 // Class 1 
     // use JavaScript to create a simple object representation of your portfolio
@@ -33,3 +35,9 @@
 
 
 // Add your click handler below to update your like counters when the like buttons are clicked. 
+
+
+
+
+
+$('body').scrollspy({ target: '#myNav' });

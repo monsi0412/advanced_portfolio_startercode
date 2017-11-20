@@ -1,9 +1,56 @@
 body {
   position: relative;
 }
+li, p, form, button{
+    font-family: 'Arima Madurai', cursive;
+    font-size:24px;
+}
+h1{
+    font-family: 'Arima Madurai', cursive;
+    text-align: center;
+}
+textarea{
+    width:100%;
+    font-size:20px;
+}
+#projectLabel{
+    left:0;
+}
+.fancyLines{
+    margin:0 auto;
+    width:50%;
+}
 
+.modalImg{
+    width:450px;
+    margin:0 auto;
+}
 /* Nav Bar CSS */
+.navbar{
+    background-color:#e0d5e0;
+    color:#632e63;
+}
 
+/* unvisited link */
+a:link {
+    color:#b34a7e;
+}
+
+/* visited link */
+a:visited {
+    color: #291621;
+}
+
+/* mouse over link */
+a:hover {
+    color: #632e63;
+}
+
+/* selected link */
+a:active {
+    color: orange;
+    text-decoration: underline;
+}
 
 /* Header CSS */
 
@@ -30,18 +77,19 @@ body {
 #headshot{
     height:500px;
     margin:0 auto;
+    margin-bottom: 200px;
+
+}
+#headshot{
     text-align: center;
+	border: 1px dashed #942794;
+	box-shadow: 0 0 0 3px #632e63, 0 0 0 5px #ddd, 0 0 0 10px #632e63, 0 0 2px 10px #eee;
 }
 #nameLogo{
     width:500px;
     margin:0 auto;
 }
 
-#navbarCollapsed{
-    width:50px;
-    height: 30px;
-    float:left;
-}
 @media(max-width: 768px) {
     #headshot{
         height:250px;
@@ -50,10 +98,16 @@ body {
     #nameLogo{
         width:275px;
     }
+    p{
+        font-size:16px;
+    }
 }
-.icon-bar{
-    background-color: black;
-}
+
 .spacer{
     height:50px;
+}
+
+#opening, #contact{
+        background-image: url("https://s-media-cache-ak0.pinimg.com/originals/b4/35/48/b43548cd2cb3cf426d43de3ffc1ab898.jpg");
+        height:100%;
 }
