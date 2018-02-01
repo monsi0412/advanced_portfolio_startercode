@@ -123,6 +123,7 @@
             <img src="pictures/fancyLine2.png" class="fancyLines">
         </div>
         <div class="row spacer"></div>
+        <h1>About Me</h1>
         <div class="row spacer"></div>
         <div class="row">
             <div class="col-md-2">
@@ -157,9 +158,10 @@
         <div class="row">
             <img src="pictures/fancyLine2.png" class="fancyLines">
         </div>
-        <div class="row spacer" id="projectLabel">
-            <div class="col-xs-12"><h1>Projects</h1></div>
-        </div>
+        <!--<div class="row spacer" id="projectLabel">-->
+        <!--    <div class="col-xs-12"><h1>Projects</h1></div>-->
+        <!--</div>-->
+        <h1>Projects</h1>
         <div class="row spacer"></div>
         <div class="row">
             <div class="col-md-1"></div>
@@ -269,6 +271,77 @@
             <div class="col-md-1"></div>
         </div>
         <div class="row spacer"></div>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-4">
+                <a href="https://monsi0412.github.io/advanced_rockpaperscissors_startercode/index.html" target="_blank"><img src="pictures/RPS home.png" class="img-thumbnail"></img></a>
+            </div>
+            <div class="col-md-2">
+                <div class="row">
+                    <p>
+                        &#8592 This is my rock paper scissor game.
+                    </p>
+                </div>
+                <div class="row">
+                    <p>
+                        It allows you to play against the computer. &#8594
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <a href="#" target="_blank"><img src="pictures/RPS win.png" class="img-thumbnail"></img></a>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-4">
+                <button class="descriptionBtn" data-toggle="modal" data-target="#RPSModal">Click to Enlarge</button>
+            </div>
+            <div class="col-md-2">
+
+            </div>
+            <div class="col-md-4">
+                <button class="descriptionBtn" data-toggle="modal" data-target="#RPSWinModal">Click to Enlarge</button>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="row spacer"></div>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-4">
+                <a href="https://monsi0412.github.io/piglatinizer/" target="_blank"><img src="pictures/piglatinHome.png" class="img-thumbnail"></img></a>
+            </div>
+            <div class="col-md-2">
+                <div class="row">
+                    <p>
+                        &#8592 This is a website that translate back and forth between Piglatin and English.
+                    </p>
+                </div>
+                <div class="row">
+                    <p>
+                        This is the Piglatinizer/Englishizer in action. &#8594
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <a href="https://monsi0412.github.io/piglatinizer/" target="_blank"><img src="pictures/piglatinExample.png" class="img-thumbnail"></img></a>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-4">
+                <button class="descriptionBtn" data-toggle="modal" data-target="#piglatinModal">Click to Enlarge</button>
+            </div>
+            <div class="col-md-2">
+
+            </div>
+            <div class="col-md-4">
+                <button class="descriptionBtn" data-toggle="modal" data-target="#piglatinExModal">Click to Enlarge</button>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
         <div class="row">
             <img src="pictures/fancyLine2.png" class="fancyLines">
         </div>
@@ -390,6 +463,82 @@
             </div>
         </div>       
     </div>
+    <div id="RPSModal" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h1>RPS</h1>
+                </div>
+                <div class="modal-body">
+                    <img src="pictures/RPS home.png" class="modalImg img-responsive"></img>
+                    <p>
+                        This is one of our first projects, we had to make a rock paper scissors game that saved variables
+                        to compete against the variable.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>       
+    </div>
+    <div id="RPSWinModal" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h1>RPS User Won</h1>
+                </div>
+                <div class="modal-body">
+                    <img src="pictures/RPS win.png" class="modalImg img-responsive"></img>
+                    <p>
+                        The game allows you to play against the computer. There are three different end results,
+                        user win, user lose, or draw. Points are added accordingly.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>       
+    </div>
+    <div id="piglatinModal" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h1>Piglatinizer</h1>
+                </div>
+                <div class="modal-body">
+                    <img src="pictures/piglatinHome.png" class="modalImg img-responsive"></img>
+                    <p>
+                        Our third project in the Advanced Class was to make a piglatinizer. 
+                        This meant creating a site that could translate any sentence to proper pig latin.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>       
+    </div>
+    <div id="piglatinExModal" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h1>Piglatinizer</h1>
+                </div>
+                <div class="modal-body">
+                    <img src="pictures/piglatinExample.png" class="modalImg img-responsive"></img>
+                    <p>
+                        I was able to figure out a way to translate most piglatinized words back to English.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>       
+    </div>
+
 
     <!-- Contact Section -->
     <div class="container-fluid" id="contact">        
@@ -397,6 +546,7 @@
         <div class="row spacer"></div>
         <div class="row spacer"></div>
             <div class="row">
+                <div class="col-md-2"></div>
                 <div class="col-md-6" id="contactMe">
                     <div id="contactForm">
                         <form action="https://formspree.io/mdiaz0412@outlook.com" method="POST" >
@@ -417,22 +567,28 @@
                         </form>
                     </div>    
                 </div>
-                <div class="col-md-6" id="myContact">
-                    <address class="address">
-                        <strong>Monserrat</strong><br>
-                        <a href="mailto:#">mdiaz0412@outlook.com</a>
-                    </address> 
-                    <p>
-                        *This will be a picture of some sort*
-                    </p>
+                
+                <div class="col-md-2" id="myContact">
+                    <div class="row spacer"></div>
+                    <div class="row spacer"></div>
+                    <div class="row spacer"></div>
+                    <div class="row">
+                        <div class="col-xs-4" style="text-align:right;">
+                            <address class="address">
+                                <strong>Monserrat</strong><br>
+                                <a href="mailto:#">mdiaz0412@outlook.com</a>
+                            </address> 
+                        </div>
+                    </div>
                 </div>
+                <div class="col-md-2"></div>
             </div>    
         
     </div>
 
     <!-- Footer -->
 
-<div class="row spacer"></div>
+<!--<div class="row spacer"></div>-->
 
 </body>
 
