@@ -38,6 +38,8 @@
 
 
 
+$(document).ready(function(){
+    
+    $('body').scrollspy({ target: '#myNav' });
+});
 
-
-$('body').scrollspy({ target: '#myNav' });
